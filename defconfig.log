@@ -1,0 +1,19 @@
+  HOSTCC  scripts/basic/fixdep
+  GEN     /home/thefrap130/Desktop/kernel/b/out/Makefile
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+In file included from scripts/kconfig/zconf.tab.c:2503:0:
+/home/thefrap130/Desktop/kernel/b/scripts/kconfig/menu.c: In function ‘get_symbol_str’:
+/home/thefrap130/Desktop/kernel/b/scripts/kconfig/menu.c:567:18: warning: ‘jump’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     jump->offset = r->len - 1;
+                  ^
+/home/thefrap130/Desktop/kernel/b/scripts/kconfig/menu.c:528:19: note: ‘jump’ was declared here
+  struct jump_key *jump;
+                   ^
+  HOSTLD  scripts/kconfig/conf
+#
+# configuration written to .config
+#
